@@ -1,0 +1,162 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand: #10b981;
+  --color-brand-dark: #0e9f6e;
+  --font-sans: "Inter", ui-sans-serif, system-ui;
+}
+
+/* --- Base Layout --- */
+h1 {
+  letter-spacing: -0.04em;
+  text-rendering: optimizeLegibility;
+}
+
+section {
+  background-size: cover;
+  background-position: center 20%;
+}
+::selection {
+  background-color: var(--color-brand);
+  color: white;
+}
+
+/* --- Header --- */
+#main-header {
+  will-change: background-color, padding, box-shadow;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-item {
+  position: relative;
+  transition: color 0.3s ease;
+  display: inline-block;
+}
+
+.nav-item::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: var(--color-brand);
+  transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-item:hover::after {
+  width: 100%;
+}
+
+/* --- Carousel --- */
+#product-track {
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.product-card {
+  scroll-snap-align: start;
+  flex: 0 0 calc(33.333% - 16px); /* Desktop: 3 cards minus gap */
+}
+
+.image-container {
+  border: 1px solid rgba(15, 23, 42, 0.05);
+  background-color: #f9fafb;
+}
+
+.product-card img {
+  mix-blend-mode: multiply;
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.product-card:hover img {
+  transform: scale(1.1);
+}
+
+/* --- Hero UI --- */
+.shadow-2xl {
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.4);
+  transition:
+    box-shadow 0.3s ease,
+    transform 0.3s ease;
+}
+
+.shadow-2xl:focus-within {
+  box-shadow: 0 30px 60px -12px rgba(16, 185, 129, 0.25);
+  transform: translateY(-2px);
+}
+
+input:focus::placeholder {
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+@media (max-width: 1024px) {
+  .product-card {
+    flex: 0 0 calc(50% - 12px);
+  }
+}
+@media (max-width: 640px) {
+  .product-card {
+    flex: 0 0 100%;
+  }
+}
+/* --- Infinite Marquee Animation --- */
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-350px * 6 - 8px * 6));
+  } /* Card width * count + gap */
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 40s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+/* Add a fade effect to the edges of the carousel */
+.relative.flex.overflow-x-hidden::before,
+.relative.flex.overflow-x-hidden::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 150px;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.relative.flex.overflow-x-hidden::before {
+  left: 0;
+  background: linear-gradient(to right, #f8fafc, transparent);
+}
+
+.relative.flex.overflow-x-hidden::after {
+  right: 0;
+  background: linear-gradient(to left, #f8fafc, transparent);
+}
+/* Newsletter input focus effect */
+.focus-within\:border-brand:focus-within {
+  border-color: var(--color-brand);
+  box-shadow: 0 0 0 1px var(--color-brand);
+}
+
+/* Ensure smooth scrolling globally */
+html {
+  scroll-behavior: smooth;
+}

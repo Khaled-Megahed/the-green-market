@@ -1,0 +1,1099 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Green Market | Freshness Reimagined</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="./src/assets/logo.png" />
+    <link rel="stylesheet" href="./src/style.css" />
+  </head>
+  <body class="bg-white font-sans antialiased">
+    <header
+      id="main-header"
+      class="fixed top-0 left-0 w-full z-50 transition-all duration-300 py-6"
+    >
+      <div class="container mx-auto px-8 flex justify-between items-center">
+        <div class="flex items-center gap-12">
+          <a
+            href="#hero"
+            id="logo-text"
+            class="text-white font-bold text-2xl tracking-tight transition-colors"
+          >
+            The <span class="text-brand">Green</span> Market
+          </a>
+          <nav class="hidden lg:flex space-x-8">
+            <a
+              href="#products"
+              class="nav-item text-white/90 font-medium transition-colors"
+              >Products</a
+            >
+            <a
+              href="#platform"
+              class="nav-item text-white/90 font-medium transition-colors"
+              >Platform</a
+            >
+            <a
+              href="#customers"
+              class="nav-item text-white/90 font-medium transition-colors"
+              >Customers</a
+            >
+            <a
+              href="#pricing"
+              class="nav-item text-white/90 font-medium transition-colors"
+              >Pricing</a
+            >
+          </nav>
+        </div>
+
+        <div class="flex items-center gap-6">
+          <a
+            href="#contact"
+            id="login-text"
+            class="hidden md:block text-white font-medium px-4 py-2 rounded-lg transition-all border border-white/20 hover:bg-white hover:text-black"
+          >
+            Contact
+          </a>
+          <button
+            id="cta-header"
+            class="hidden sm:block bg-brand text-white px-5 py-2 rounded-lg font-semibold border border-brand shadow-md transition-all duration-300 hover:bg-transparent hover:text-brand active:scale-95"
+          >
+            Shop Fresh
+          </button>
+
+          <button
+            id="mobile-menu-btn"
+            class="lg:hidden text-white p-2 outline-none"
+          >
+            <svg
+              id="menu-icon"
+              class="w-7 h-7"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <div
+        id="mobile-menu"
+        class="fixed inset-0 bg-slate-950 z-[60] flex flex-col items-center justify-center space-y-8 transition-all duration-500 translate-x-full lg:hidden"
+      >
+        <button id="close-menu" class="absolute top-8 right-8 text-white">
+          <svg
+            class="w-8 h-8"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        </button>
+        <a
+          href="#products"
+          class="mobile-nav-link text-3xl font-bold text-white"
+          >Products</a
+        >
+        <a
+          href="#platform"
+          class="mobile-nav-link text-3xl font-bold text-white"
+          >Platform</a
+        >
+        <a
+          href="#customers"
+          class="mobile-nav-link text-3xl font-bold text-white"
+          >Customers</a
+        >
+        <a href="#pricing" class="mobile-nav-link text-3xl font-bold text-white"
+          >Pricing</a
+        >
+        <a href="#contact" class="mobile-nav-link text-3xl font-bold text-brand"
+          >Contact Us</a
+        >
+      </div>
+    </header>
+    <main>
+      <section
+        id="hero"
+        class="relative h-[90vh] flex items-center overflow-hidden"
+        style="background-image: url(&quot;./src/assets/bg.jpg&quot;)"
+      >
+        <div
+          class="absolute inset-0 bg-gradient-to-r from-black/70 via-black/30 to-transparent"
+        ></div>
+        <div class="container mx-auto px-8 relative z-10">
+          <div class="max-w-xl space-y-6">
+            <h1
+              class="text-6xl md:text-7xl font-bold text-white leading-[1.05]"
+            >
+              <span class="text-brand">Fresh</span>ness that <br />
+              scales with you
+            </h1>
+            <p class="text-lg text-white/80 max-w-md">
+              Smart marketplace for organic produce. Delivered with zero-waste
+              packaging.
+            </p>
+            <div
+              class="flex items-center bg-white p-1.5 rounded-xl shadow-2xl max-w-md border border-white/20"
+            >
+              <input
+                type="text"
+                placeholder="Enter zip code"
+                class="flex-grow px-4 py-3 outline-none text-gray-800 bg-transparent"
+              />
+              <button
+                class="bg-brand text-white px-6 py-3 rounded-lg font-bold hover:bg-brand-dark transition-all active:scale-95"
+              >
+                Shop Fresh
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="products" class="bg-white py-20 overflow-hidden">
+        <div class="container mx-auto px-8">
+          <div class="flex items-end justify-between mb-10">
+            <div>
+              <h2
+                class="text-brand font-bold uppercase text-[10px] tracking-[0.2em] mb-2"
+              >
+                Daily Selection
+              </h2>
+              <h3 class="text-3xl font-bold text-slate-900 tracking-tighter">
+                <span class="text-brand">Fresh</span> Arrivals
+              </h3>
+            </div>
+            <div class="flex gap-2">
+              <button
+                id="prev-btn"
+                class="p-2 rounded-full border border-slate-200 text-slate-400 hover:border-brand hover:text-brand hover:bg-brand/5 transition-all hover:cursor-pointer"
+              >
+                <svg
+                  class="w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M15 19l-7-7 7-7"
+                  />
+                </svg>
+              </button>
+              <button
+                id="next-btn"
+                class="p-2 rounded-full border border-slate-200 text-slate-400 hover:border-brand hover:text-brand hover:bg-brand/5 transition-all hover:cursor-pointer"
+              >
+                <svg
+                  class="w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 5l7 7-7 7"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <div
+            id="product-track"
+            class="flex gap-6 overflow-x-auto snap-x snap-mandatory no-scrollbar pb-8"
+          >
+            <div class="product-card group cursor-pointer">
+              <div
+                class="image-container relative aspect-square overflow-hidden rounded-2xl flex items-center justify-center p-8"
+              >
+                <img
+                  src="./src/assets/carrot.png"
+                  alt="Carrot"
+                  class="w-full h-full object-contain"
+                />
+              </div>
+              <div class="mt-4 flex justify-between items-center">
+                <h4 class="text-sm font-bold text-slate-900">
+                  Organic Carrots
+                </h4>
+                <span class="text-sm font-bold text-brand">$2.99</span>
+              </div>
+            </div>
+
+            <div class="product-card group cursor-pointer">
+              <div
+                class="image-container relative aspect-square overflow-hidden rounded-2xl flex items-center justify-center p-8"
+              >
+                <img
+                  src="./src/assets/lemon.png"
+                  alt="Lemon"
+                  class="w-full h-full object-contain"
+                />
+              </div>
+              <div class="mt-4 flex justify-between items-center">
+                <h4 class="text-sm font-bold text-slate-900">Fresh Lemon</h4>
+                <span class="text-sm font-bold text-brand">$0.89</span>
+              </div>
+            </div>
+
+            <div class="product-card group cursor-pointer">
+              <div
+                class="image-container relative aspect-square overflow-hidden rounded-2xl flex items-center justify-center p-8"
+              >
+                <img
+                  src="./src/assets/lettuce.png"
+                  alt="Lettuce"
+                  class="w-full h-full object-contain"
+                />
+              </div>
+              <div class="mt-4 flex justify-between items-center">
+                <h4 class="text-sm font-bold text-slate-900">Crisp Lettuce</h4>
+                <span class="text-sm font-bold text-brand">$1.50</span>
+              </div>
+            </div>
+
+            <div class="product-card group cursor-pointer">
+              <div
+                class="image-container relative aspect-square overflow-hidden rounded-2xl flex items-center justify-center p-8"
+              >
+                <img
+                  src="./src/assets/onion.png"
+                  alt="Onion"
+                  class="w-full h-full object-contain"
+                />
+              </div>
+              <div class="mt-4 flex justify-between items-center">
+                <h4 class="text-sm font-bold text-slate-900">Red Onion</h4>
+                <span class="text-sm font-bold text-brand">$1.20</span>
+              </div>
+            </div>
+
+            <div class="product-card group cursor-pointer">
+              <div
+                class="image-container relative aspect-square overflow-hidden rounded-2xl flex items-center justify-center p-8"
+              >
+                <img
+                  src="./src/assets/peas.png"
+                  alt="Peas"
+                  class="w-full h-full object-contain"
+                />
+              </div>
+              <div class="mt-4 flex justify-between items-center">
+                <h4 class="text-sm font-bold text-slate-900">Green Peas</h4>
+                <span class="text-sm font-bold text-brand">$3.10</span>
+              </div>
+            </div>
+
+            <div class="product-card group cursor-pointer">
+              <div
+                class="image-container relative aspect-square overflow-hidden rounded-2xl flex items-center justify-center p-8"
+              >
+                <img
+                  src="./src/assets/pepper.png"
+                  alt="Pepper"
+                  class="w-full h-full object-contain"
+                />
+              </div>
+              <div class="mt-4 flex justify-between items-center">
+                <h4 class="text-sm font-bold text-slate-900">Bell Pepper</h4>
+                <span class="text-sm font-bold text-brand">$1.95</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        id="platform"
+        class="process-section relative min-h-screen flex items-center overflow-hidden"
+        style="background-image: url(./src/assets/bg2.png)"
+      >
+        <div class="absolute inset-0 bg-gradient-to-r from-slate-950 z-0"></div>
+
+        <div class="container mx-auto px-8 relative z-10 py-24">
+          <div class="grid md:grid-cols-12 gap-12 items-center">
+            <div class="md:col-span-5 md:sticky md:top-32 h-max">
+              <h2
+                class="text-brand font-semibold tracking-wide uppercase text-sm mb-4"
+              >
+                The Platform
+              </h2>
+              <h3
+                class="text-5xl md:text-6xl font-bold text-white tracking-tighter leading-[1.05]"
+              >
+                Built for <br />
+                modern demand.
+              </h3>
+              <p class="mt-6 text-lg text-slate-300 max-w-sm leading-relaxed">
+                The Green Market bridges the gap between regenerative farms and
+                your table, delivering nutrient-dense food with a carbon-neutral
+                footprint.
+              </p>
+              <button
+                class="mt-10 bg-brand text-white px-7 py-3 rounded-lg font-bold border border-brand hover:bg-transparent hover:text-brand transition-all duration-300 active:scale-95"
+              >
+                Explore Our Farmers
+              </button>
+            </div>
+
+            <div class="md:col-span-7 space-y-16">
+              <div
+                class="process-card flex items-start gap-8 bg-slate-950/40 p-10 rounded-3xl border border-slate-800 backdrop-blur-sm group hover:border-brand transition-all"
+              >
+                <div
+                  class="flex-shrink-0 text-7xl font-bold text-slate-700/80 tracking-tighter group-hover:text-brand transition-colors"
+                >
+                  01
+                </div>
+                <div>
+                  <h4 class="text-2xl font-bold text-white mb-3">
+                    Farm to Table (Actually)
+                  </h4>
+                  <p class="text-slate-400 leading-relaxed">
+                    We directly track produce from harvest to shipment. No
+                    warehouses, no multiple handlers. Just smart logistics
+                    connecting you with local growers within a 50-mile radius.
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="process-card flex items-start gap-8 bg-slate-950/40 p-10 rounded-3xl border border-slate-800 backdrop-blur-sm group hover:border-brand transition-all"
+              >
+                <div
+                  class="flex-shrink-0 text-7xl font-bold text-slate-700/80 tracking-tighter group-hover:text-brand transition-colors"
+                >
+                  02
+                </div>
+                <div>
+                  <h4 class="text-2xl font-bold text-white mb-3">
+                    Predicted Harvesting
+                  </h4>
+                  <p class="text-slate-400 leading-relaxed">
+                    Our ML model analyzes hyper-local weather data to predict
+                    the peak nutrient window for every vegetable, ensuring we
+                    harvest only when quality is at 100%.
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="process-card flex items-start gap-8 bg-slate-950/40 p-10 rounded-3xl border border-slate-800 backdrop-blur-sm group hover:border-brand transition-all"
+              >
+                <div
+                  class="flex-shrink-0 text-7xl font-bold text-slate-700/80 tracking-tighter group-hover:text-brand transition-colors"
+                >
+                  03
+                </div>
+                <div>
+                  <h4 class="text-2xl font-bold text-white mb-3">
+                    Waste-Free Supply Chain
+                  </h4>
+                  <p class="text-slate-400 leading-relaxed">
+                    We operate on demand. By matching harvests to active orders,
+                    we reduce supply chain food waste by 98% compared to
+                    traditional grocery models.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="customers" class="bg-slate-50 py-24 overflow-hidden">
+        <div class="container mx-auto px-8 mb-12 text-center">
+          <h2
+            class="text-brand font-bold uppercase text-[10px] tracking-[0.2em] mb-3"
+          >
+            Community
+          </h2>
+          <h3 class="text-4xl font-bold text-slate-900 tracking-tighter">
+            Trusted by 50,000+ kitchens
+          </h3>
+        </div>
+
+        <div class="relative flex overflow-x-hidden">
+          <div
+            id="testimonial-track"
+            class="flex animate-marquee whitespace-nowrap gap-8 py-4"
+          >
+            <div
+              class="w-[350px] flex-shrink-0 bg-white p-8 rounded-3xl border border-slate-100 shadow-sm"
+            >
+              <div class="flex items-center gap-4 mb-4">
+                <img
+                  src="https://i.pravatar.cc/150?u=1"
+                  class="w-10 h-10 rounded-full object-cover"
+                />
+                <div>
+                  <h4 class="text-sm font-bold text-slate-900">
+                    Sarah Jenkins
+                  </h4>
+                  <p
+                    class="text-[10px] text-brand font-bold uppercase tracking-wider"
+                  >
+                    Professional Chef
+                  </p>
+                </div>
+              </div>
+              <p
+                class="text-slate-600 text-sm leading-relaxed whitespace-normal italic"
+              >
+                "The quality of the heirloom tomatoes is unmatched. You can
+                actually taste the soil health."
+              </p>
+            </div>
+
+            <div
+              class="w-[350px] flex-shrink-0 bg-white p-8 rounded-3xl border border-slate-100 shadow-sm"
+            >
+              <div class="flex items-center gap-4 mb-4">
+                <img
+                  src="https://i.pravatar.cc/150?u=2"
+                  class="w-10 h-10 rounded-full object-cover"
+                />
+                <div>
+                  <h4 class="text-sm font-bold text-slate-900">Marcus Chen</h4>
+                  <p
+                    class="text-[10px] text-brand font-bold uppercase tracking-wider"
+                  >
+                    Subscriber
+                  </p>
+                </div>
+              </div>
+              <p
+                class="text-slate-600 text-sm leading-relaxed whitespace-normal italic"
+              >
+                "Finally, a service that actually delivers on the zero-waste
+                promise. The packaging is brilliant."
+              </p>
+            </div>
+
+            <div
+              class="w-[350px] flex-shrink-0 bg-white p-8 rounded-3xl border border-slate-100 shadow-sm"
+            >
+              <div class="flex items-center gap-4 mb-4">
+                <img
+                  src="https://i.pravatar.cc/150?u=3"
+                  class="w-10 h-10 rounded-full object-cover"
+                />
+                <div>
+                  <h4 class="text-sm font-bold text-slate-900">
+                    Elena Rodriguez
+                  </h4>
+                  <p
+                    class="text-[10px] text-brand font-bold uppercase tracking-wider"
+                  >
+                    Nutritionist
+                  </p>
+                </div>
+              </div>
+              <p
+                class="text-slate-600 text-sm leading-relaxed whitespace-normal italic"
+              >
+                "The nutrient density in picked-to-order produce is
+                significantly higher than store-bought."
+              </p>
+            </div>
+
+            <div
+              class="w-[350px] flex-shrink-0 bg-white p-8 rounded-3xl border border-slate-100 shadow-sm"
+            >
+              <div class="flex items-center gap-4 mb-4">
+                <img
+                  src="https://i.pravatar.cc/150?u=4"
+                  class="w-10 h-10 rounded-full object-cover"
+                />
+                <div>
+                  <h4 class="text-sm font-bold text-slate-900">David Vane</h4>
+                  <p
+                    class="text-[10px] text-brand font-bold uppercase tracking-wider"
+                  >
+                    Tech Lead
+                  </p>
+                </div>
+              </div>
+              <p
+                class="text-slate-600 text-sm leading-relaxed whitespace-normal italic"
+              >
+                "The API integration for tracking my delivery is flawless. Top
+                tier UX and platform."
+              </p>
+            </div>
+
+            <div
+              class="w-[350px] flex-shrink-0 bg-white p-8 rounded-3xl border border-slate-100 shadow-sm"
+            >
+              <div class="flex items-center gap-4 mb-4">
+                <img
+                  src="https://i.pravatar.cc/150?u=5"
+                  class="w-10 h-10 rounded-full object-cover"
+                />
+                <div>
+                  <h4 class="text-sm font-bold text-slate-900">James Wilson</h4>
+                  <p
+                    class="text-[10px] text-brand font-bold uppercase tracking-wider"
+                  >
+                    Farm Partner
+                  </p>
+                </div>
+              </div>
+              <p
+                class="text-slate-600 text-sm leading-relaxed whitespace-normal italic"
+              >
+                "They prioritize the soil. As a farmer, it's rare to find a
+                partner that understands the harvest."
+              </p>
+            </div>
+
+            <div
+              class="w-[350px] flex-shrink-0 bg-white p-8 rounded-3xl border border-slate-100 shadow-sm"
+            >
+              <div class="flex items-center gap-4 mb-4">
+                <img
+                  src="https://i.pravatar.cc/150?u=6"
+                  class="w-10 h-10 rounded-full object-cover"
+                />
+                <div>
+                  <h4 class="text-sm font-bold text-slate-900">Lisa K.</h4>
+                  <p
+                    class="text-[10px] text-brand font-bold uppercase tracking-wider"
+                  >
+                    Home Cook
+                  </p>
+                </div>
+              </div>
+              <p
+                class="text-slate-600 text-sm leading-relaxed whitespace-normal italic"
+              >
+                "The freshest greens I've ever had delivered. It's like having a
+                garden in my apartment."
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="pricing" class="bg-white py-24">
+        <div class="container mx-auto px-8">
+          <div class="text-center max-w-2xl mx-auto mb-16">
+            <h2
+              class="text-brand font-bold uppercase text-[10px] tracking-[0.2em] mb-3"
+            >
+              Pricing Plans
+            </h2>
+            <h3 class="text-4xl font-bold text-slate-900 tracking-tighter">
+              Flexible harvests for <br />
+              every kitchen size.
+            </h3>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <div
+              class="p-8 rounded-3xl border border-slate-100 bg-slate-50/50 flex flex-col transition-all hover:border-slate-200"
+            >
+              <div class="mb-8">
+                <h4 class="text-slate-900 font-bold text-xl mb-2">
+                  The Sprout
+                </h4>
+                <p class="text-slate-500 text-sm">
+                  Perfect for individuals or couples.
+                </p>
+              </div>
+              <div class="mb-8">
+                <span class="text-4xl font-bold text-slate-900">$29</span>
+                <span class="text-slate-400">/week</span>
+              </div>
+              <ul class="space-y-4 mb-10 flex-grow">
+                <li class="flex items-center gap-3 text-sm text-slate-600">
+                  <svg
+                    class="w-5 h-5 text-brand"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    />
+                  </svg>
+                  5-7 Seasonal Items
+                </li>
+                <li class="flex items-center gap-3 text-sm text-slate-600">
+                  <svg
+                    class="w-5 h-5 text-brand"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    />
+                  </svg>
+                  Weekly Delivery
+                </li>
+                <li
+                  class="flex items-center gap-3 text-sm text-slate-400 line-through"
+                >
+                  Priority Harvesting
+                </li>
+              </ul>
+              <button
+                class="w-full py-3 rounded-xl border border-slate-200 font-bold text-slate-900 hover:bg-white hover:shadow-sm transition-all"
+              >
+                Get Started
+              </button>
+            </div>
+
+            <div
+              class="p-8 rounded-3xl border-2 border-brand bg-white flex flex-col relative shadow-xl shadow-brand/5 transform scale-105 z-10"
+            >
+              <div
+                class="absolute -top-4 left-1/2 -translate-x-1/2 bg-brand text-white text-[10px] font-bold uppercase tracking-widest px-4 py-1 rounded-full"
+              >
+                Most Popular
+              </div>
+              <div class="mb-8">
+                <h4 class="text-slate-900 font-bold text-xl mb-2">
+                  The Harvest
+                </h4>
+                <p class="text-slate-500 text-sm">Ideal for families of 3-4.</p>
+              </div>
+              <div class="mb-8">
+                <span class="text-4xl font-bold text-slate-900">$55</span>
+                <span class="text-slate-400">/week</span>
+              </div>
+              <ul class="space-y-4 mb-10 flex-grow">
+                <li class="flex items-center gap-3 text-sm text-slate-600">
+                  <svg
+                    class="w-5 h-5 text-brand"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    />
+                  </svg>
+                  10-12 Seasonal Items
+                </li>
+                <li class="flex items-center gap-3 text-sm text-slate-600">
+                  <svg
+                    class="w-5 h-5 text-brand"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    />
+                  </svg>
+                  Custom Box Selection
+                </li>
+                <li class="flex items-center gap-3 text-sm text-slate-600">
+                  <svg
+                    class="w-5 h-5 text-brand"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    />
+                  </svg>
+                  Priority Harvesting
+                </li>
+              </ul>
+              <button
+                class="w-full py-3 rounded-xl bg-brand text-white font-bold hover:bg-brand-dark shadow-lg shadow-brand/20 transition-all active:scale-95"
+              >
+                Subscribe Now
+              </button>
+            </div>
+
+            <div
+              class="p-8 rounded-3xl border border-slate-100 bg-slate-50/50 flex flex-col transition-all hover:border-slate-200"
+            >
+              <div class="mb-8">
+                <h4 class="text-slate-900 font-bold text-xl mb-2">
+                  The Estate
+                </h4>
+                <p class="text-slate-500 text-sm">For serious home chefs.</p>
+              </div>
+              <div class="mb-8">
+                <span class="text-4xl font-bold text-slate-900">$89</span>
+                <span class="text-slate-400">/week</span>
+              </div>
+              <ul class="space-y-4 mb-10 flex-grow">
+                <li class="flex items-center gap-3 text-sm text-slate-600">
+                  <svg
+                    class="w-5 h-5 text-brand"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    />
+                  </svg>
+                  Unlimited Seasonal Items
+                </li>
+                <li class="flex items-center gap-3 text-sm text-slate-600">
+                  <svg
+                    class="w-5 h-5 text-brand"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    />
+                  </svg>
+                  Rare/Exotic Varieties
+                </li>
+                <li class="flex items-center gap-3 text-sm text-slate-600">
+                  <svg
+                    class="w-5 h-5 text-brand"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    />
+                  </svg>
+                  Personal Farm Liaison
+                </li>
+              </ul>
+              <button
+                class="w-full py-3 rounded-xl border border-slate-200 font-bold text-slate-900 hover:bg-white hover:shadow-sm transition-all"
+              >
+                Get Started
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="bg-slate-950 py-24 relative overflow-hidden">
+        <div
+          class="absolute top-0 right-0 w-[500px] h-[500px] bg-brand/10 blur-[120px] rounded-full -mr-64 -mt-64"
+        ></div>
+
+        <div class="container mx-auto px-8 relative z-10">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div>
+              <h2
+                class="text-brand font-bold uppercase text-[10px] tracking-[0.2em] mb-4"
+              >
+                Support
+              </h2>
+              <h3
+                class="text-5xl font-bold text-white tracking-tighter mb-8 leading-[1.1]"
+              >
+                We’re here to <br />
+                keep things fresh.
+              </h3>
+              <p class="text-slate-400 text-lg mb-12 max-w-md">
+                Need help with a delivery? Want to partner as a farmer? Our team
+                is available 24/7.
+              </p>
+
+              <div class="space-y-8">
+                <div class="flex items-center gap-6 group">
+                  <div
+                    class="w-12 h-12 rounded-2xl bg-slate-900 border border-slate-800 flex items-center justify-center group-hover:border-brand transition-colors"
+                  >
+                    <svg
+                      class="w-5 h-5 text-brand"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    <p
+                      class="text-[10px] uppercase tracking-widest text-slate-500 font-bold"
+                    >
+                      Email us
+                    </p>
+                    <p class="text-white font-medium">
+                      support@greenmarket.com
+                    </p>
+                  </div>
+                </div>
+
+                <div class="flex items-center gap-6 group">
+                  <div
+                    class="w-12 h-12 rounded-2xl bg-slate-900 border border-slate-800 flex items-center justify-center group-hover:border-brand transition-colors"
+                  >
+                    <svg
+                      class="w-5 h-5 text-brand"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    <p
+                      class="text-[10px] uppercase tracking-widest text-slate-500 font-bold"
+                    >
+                      Call us
+                    </p>
+                    <p class="text-white font-medium">+1 (555) 000-GREEN</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white p-10 rounded-[2.5rem] shadow-2xl shadow-black/50"
+            >
+              <form class="space-y-6">
+                <div class="grid grid-cols-2 gap-4">
+                  <div class="space-y-2">
+                    <label
+                      class="text-[11px] font-bold text-slate-400 uppercase tracking-tighter ml-1"
+                      >First Name</label
+                    >
+                    <input
+                      type="text"
+                      class="w-full bg-slate-50 border border-slate-100 rounded-xl px-4 py-3 outline-none focus:border-brand transition-all text-slate-900"
+                      placeholder="Alex"
+                    />
+                  </div>
+                  <div class="space-y-2">
+                    <label
+                      class="text-[11px] font-bold text-slate-400 uppercase tracking-tighter ml-1"
+                      >Last Name</label
+                    >
+                    <input
+                      type="text"
+                      class="w-full bg-slate-50 border border-slate-100 rounded-xl px-4 py-3 outline-none focus:border-brand transition-all text-slate-900"
+                      placeholder="g"
+                    />
+                  </div>
+                </div>
+
+                <div class="space-y-2">
+                  <label
+                    class="text-[11px] font-bold text-slate-400 uppercase tracking-tighter ml-1"
+                    >Email Address</label
+                  >
+                  <input
+                    type="email"
+                    class="w-full bg-slate-50 border border-slate-100 rounded-xl px-4 py-3 outline-none focus:border-brand transition-all text-slate-900"
+                    placeholder="hello@example.com"
+                  />
+                </div>
+
+                <div class="space-y-2">
+                  <label
+                    class="text-[11px] font-bold text-slate-400 uppercase tracking-tighter ml-1"
+                    >Message</label
+                  >
+                  <textarea
+                    rows="4"
+                    class="w-full bg-slate-50 border border-slate-100 rounded-xl px-4 py-3 outline-none focus:border-brand transition-all text-slate-900 resize-none"
+                    placeholder="Tell us about your kitchen..."
+                  ></textarea>
+                </div>
+
+                <button
+                  class="w-full bg-slate-900 text-white py-4 rounded-xl font-bold hover:bg-brand transition-all transform active:scale-[0.98] shadow-lg shadow-slate-900/20"
+                >
+                  Send Message
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-white pt-24 pb-12 border-t border-slate-100">
+      <div class="container mx-auto px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 mb-16">
+          <div class="lg:col-span-5 space-y-8">
+            <a
+              href="#"
+              class="text-slate-900 font-bold text-2xl tracking-tight"
+            >
+              The <span class="text-brand">Green</span> Market
+            </a>
+            <p class="text-slate-500 max-w-sm leading-relaxed">
+              The modern infrastructure for organic produce. We connect
+              regenerative farms directly to your kitchen.
+            </p>
+            <div
+              class="flex items-center bg-slate-50 p-1.5 rounded-xl border border-slate-100 max-w-md focus-within:border-brand transition-all"
+            >
+              <input
+                type="email"
+                placeholder="Join our newsletter"
+                class="flex-grow px-4 py-2 outline-none bg-transparent text-sm text-slate-900"
+              />
+              <button
+                class="bg-slate-900 text-white px-5 py-2 rounded-lg font-bold text-sm hover:bg-brand transition-all active:scale-95"
+              >
+                Subscribe
+              </button>
+            </div>
+          </div>
+
+          <div class="lg:col-span-7 grid grid-cols-2 md:grid-cols-3 gap-8">
+            <div class="space-y-4">
+              <h4
+                class="text-[10px] font-bold uppercase tracking-widest text-slate-400"
+              >
+                Platform
+              </h4>
+              <ul class="space-y-3 text-sm font-medium text-slate-600">
+                <li>
+                  <a href="#products" class="hover:text-brand transition-colors"
+                    >Fresh Arrivals</a
+                  >
+                </li>
+                <li>
+                  <a href="#platform" class="hover:text-brand transition-colors"
+                    >How it Works</a
+                  >
+                </li>
+                <li>
+                  <a href="#pricing" class="hover:text-brand transition-colors"
+                    >Subscription Plans</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="space-y-4">
+              <h4
+                class="text-[10px] font-bold uppercase tracking-widest text-slate-400"
+              >
+                Company
+              </h4>
+              <ul class="space-y-3 text-sm font-medium text-slate-600">
+                <li>
+                  <a href="#" class="hover:text-brand transition-colors"
+                    >Our Farmers</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#customers"
+                    class="hover:text-brand transition-colors"
+                    >Testimonials</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="hover:text-brand transition-colors"
+                    >Sustainability Report</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="space-y-4">
+              <h4
+                class="text-[10px] font-bold uppercase tracking-widest text-slate-400"
+              >
+                Social
+              </h4>
+              <ul class="space-y-3 text-sm font-medium text-slate-600">
+                <li>
+                  <a href="#" class="hover:text-brand transition-colors"
+                    >Instagram</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="hover:text-brand transition-colors"
+                    >Twitter (X)</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="hover:text-brand transition-colors"
+                    >LinkedIn</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="pt-8 border-t border-slate-100 flex flex-col md:row justify-between items-center gap-4 text-[11px] font-bold uppercase tracking-tighter text-slate-400"
+        >
+          <p>© 2026 The Green Market Inc. All rights reserved.</p>
+          <div class="flex gap-8">
+            <a href="#" class="hover:text-slate-900 transition-colors"
+              >Privacy Policy</a
+            >
+            <a href="#" class="hover:text-slate-900 transition-colors"
+              >Terms of Service</a
+            >
+            <a href="#" class="hover:text-slate-900 transition-colors"
+              >Cookie Settings</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./src/main.js"></script>
+  </body>
+</html>
